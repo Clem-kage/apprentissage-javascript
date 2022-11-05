@@ -24,10 +24,13 @@ let cmValue = taille.value;
 let result = (imc)=>{
   const rank = BMIData.find(data =>{
   if(imc>data.range[0] && imc<data.range[1] )return data
+  else if(typeof data.range === "number" && imc > data.range) return data
   
   })
   message.textContent = `vous etes en ${rank.name} `
-  application.style.backgroundColor = rank.color
+  princMessage.style.color = rank.color
+  message.style.color = rank.color
+  application.style.border = `${rank.color} solid 5px`
   princMessage.textContent = imc
 }
 

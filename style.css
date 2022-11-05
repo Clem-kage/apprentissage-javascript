@@ -16,6 +16,7 @@ body {
   width: 50vw;
   height: 55vh;
   border: black solid 1px;
+  border-radius: 20px;
   margin: 0 auto;
   background-color: rgb(219, 217, 217);
   display: flex;

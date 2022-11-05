@@ -54,4 +54,6 @@ let process = ()=>{
 }
 
 
-confirmation.addEventListener('click', process)
+// confirmation.addEventListener('input', process)
+poids.addEventListener('change', process)
+taille.addEventListener('change', process)
